@@ -54,7 +54,7 @@ async function takeData(e) {
 
 async function nextPage(e) {
   e.preventDefault();
-  gallery.innerHTML = '';
+  // gallery.innerHTML = '';
   page += 1;
   const response = await axios.get(
     `https://pixabay.com/api/?key=33158907-0652e41e9f508e65904cd564d&q=${input.value}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${page}`
